@@ -1,0 +1,238 @@
+import { FlatList, Image, ScrollView, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import React, { Component } from 'react'
+
+export default class Displayscreen extends Component {
+constructor(props){
+    super(props);
+    this.state ={
+        name:'',
+        lastname:'',
+        adddress:'',
+        address2:'',
+        city:'',
+        state:'',
+        pincode:'',
+        email:'',
+        companyurl:'',
+        phonenumber:'',
+        companyname:'',
+
+    Deatlieslist :
+    [
+    {
+        id:1,
+        name:'Rohan',
+        lastname :'patel',
+        address:'Om nager ka pass',
+        address2:'Vivo Services center  in near',
+        city:'Rajkot',
+        state:'Gujarat',
+        pincode :'360370',
+        email:'rohan@gmail.com',
+        companyurl:'www.rohan.com', 
+  phonenumber:-'7988565236',
+  companyname:'rohan LLp'
+    },
+    // {
+    //     id:2,
+    //     name:'Sohan',
+    //     lastname :'patel',
+    //     address:'Om nager ka pass',
+    //     address2:'Vivo Services center  in near',
+    //     city:'Rajkot',
+    //     state:'Gujarat',
+    //     pincode :'360370',
+    //     email:'rohan@gmail.com',
+    //     companyurl:'www.rohan.com' 
+    // },
+    
+    ]
+ }
+}
+    render() {
+
+        
+    const Deatlies_list_render_item_list=({item,index})=>{
+        return(
+            <View style={{flexDirection:'column'}}>
+                <View style={{height:40,marginTop:10,flexDirection:'row',alignItems:'center',borderRadius:10,backgroundColor:'red'}}>
+                    <Text style={{paddingHorizontal:10,color:'white'}}>Name:-</Text>
+      <TextInput
+      
+      value={this.state.name}
+      style={{height:40,flex:1,backgroundColor:'white',paddingHorizontal:4}} 
+      
+      
+      placeholderTextColor={'black'}
+      
+      >{item.name}</TextInput> 
+
+                </View>
+                <View style={{height:40,marginTop:10,flexDirection:'row',alignItems:'center',borderRadius:10,backgroundColor:'red'}}>
+                    <Text style={{paddingHorizontal:10,color:'white'}}>lastname:-</Text>
+      <TextInput 
+      
+      value={this.state.lastname}
+      style={{height:40,flex:1,backgroundColor:'white',paddingHorizontal:4}} 
+            placeholderTextColor={'black'}
+      
+      >{ ""+item.lastname}
+      </TextInput> 
+
+                </View>
+                <View style={{height:40,marginTop:10,flexDirection:'row',alignItems:'center',borderRadius:10,backgroundColor:'red'}}>
+                    <Text style={{paddingHorizontal:10,color:'white'}}>address:-</Text>
+      <TextInput
+      
+      value={this.state.adddress}
+      style={{height:40,flex:1,backgroundColor:'white',paddingHorizontal:4}} 
+      placeholderTextColor={'black'}
+      
+      >    { ""+item.address}
+      </TextInput> 
+
+                </View>
+                
+                <View style={{height:40,marginTop:10,flexDirection:'row',alignItems:'center',borderRadius:10,backgroundColor:'red'}}>
+                    <Text style={{paddingHorizontal:10,color:'white'}}>address2:-</Text>
+      <TextInput 
+      
+      value={this.state.address2}
+      style={{height:40,flex:1,backgroundColor:'white',paddingHorizontal:4}} 
+      placeholderTextColor={'black'}
+      
+      > { ""+item.address2}
+      </TextInput> 
+
+                </View>
+                <View style={{height:40,marginTop:10,flexDirection:'row',alignItems:'center',borderRadius:10,backgroundColor:'red'}}>
+                    <Text style={{paddingHorizontal:10,color:'white'}}>city:-</Text>
+      <TextInput
+      
+      value={this.state.city}
+      style={{height:40,flex:1,backgroundColor:'white',paddingHorizontal:4}} 
+      placeholderTextColor={'black'}
+      
+      > { ""+item.city}
+      </TextInput> 
+
+                </View>
+                <View style={{height:40,marginTop:10,flexDirection:'row',alignItems:'center',borderRadius:10,backgroundColor:'red'}}>
+                    <Text style={{paddingHorizontal:10,color:'white'}}>State:-</Text>
+      <TextInput
+      
+      value={this.state.state}
+      style={{height:40,flex:1,backgroundColor:'white',paddingHorizontal:4}} 
+      placeholderTextColor={'black'}
+      
+      > { ""+item.state}
+      </TextInput> 
+
+                </View>
+                <View style={{height:40,marginTop:10,flexDirection:'row',alignItems:'center',borderRadius:10,backgroundColor:'red'}}>
+                    <Text style={{paddingHorizontal:10,color:'white'}}>pincode:-</Text>
+      <TextInput
+      
+      value={this.state.pincode}
+      style={{height:40,flex:1,backgroundColor:'white',paddingHorizontal:4}} 
+      placeholderTextColor={'black'}
+      
+      >
+        { ""+item.pincode}
+      
+        </TextInput> 
+
+                </View>
+                <View style={{height:40,marginTop:10,flexDirection:'row',alignItems:'center',borderRadius:10,backgroundColor:'red'}}>
+                    <Text style={{paddingHorizontal:10,color:'white'}}>email:-</Text>
+      <TextInput
+      
+      value={this.state.email}
+      style={{height:40,flex:1,backgroundColor:'white',paddingHorizontal:4}} 
+     
+      placeholderTextColor={'black'}
+      
+      > { ""+item.email}
+        </TextInput> 
+
+                </View>
+                <View style={{height:40,marginTop:10,flexDirection:'row',alignItems:'center',borderRadius:10,backgroundColor:'red'}}>
+                    <Text style={{paddingHorizontal:10,color:'white'}}>companyurl:-</Text>
+      <TextInput
+      
+      value={this.state.companyurl}
+      style={{height:40,flex:1,backgroundColor:'white',paddingHorizontal:4}} 
+     placeholderTextColor={'black'}
+      
+      > 
+      { ""+item.companyurl}
+      </TextInput> 
+
+
+
+                </View>
+ 
+                <View style={{height:40,marginTop:10,flexDirection:'row',alignItems:'center',borderRadius:10,backgroundColor:'red'}}>
+                    <Text style={{paddingHorizontal:10,color:'white'}}>phonenumber:-</Text>
+      <TextInput
+      
+      value={this.state.phonenumber}
+      style={{height:40,flex:1,backgroundColor:'white',paddingHorizontal:4}} 
+      placeholderTextColor={'black'}
+      
+      >
+      { ""+item.phonenumber}
+      
+        </TextInput> 
+
+
+
+                </View>
+
+                <View style={{height:40,marginTop:10,flexDirection:'row',alignItems:'center',borderRadius:10,backgroundColor:'red'}}>
+                    <Text style={{paddingHorizontal:10,color:'white'}}>companyname:-</Text>
+      <TextInput 
+      style={{height:40,flex:1,backgroundColor:'white',paddingHorizontal:4}} 
+      placeholderTextColor={'black'}
+      
+      > 
+      { ""+item.companyname}
+     
+        </TextInput> 
+
+
+
+
+                </View>
+<TouchableOpacity onPress={()=>{this.props.navigation.navigate('Displayscreen',{displayname:this.state.Deatlieslist}),alert(this.state.Deatlieslist)}}>
+<View style={{borderRadius:40,alignItems:'center',marginTop:10,backgroundColor:'red',width:200,alignSelf:'center',padding:20}}>
+<Text style={{color:'white'}}>
+    Confirm
+</Text>
+
+</View>
+</TouchableOpacity>
+                 </View>
+                        
+        )
+    }
+        return (
+            <View style={{margin:20,borderStyle:'dashed',borderColor:'red',borderWidth:1,borderRadius:10}}>
+            
+            <View style={{backgroundColor:'grey',height:'100%',width:'100%',borderRadius:10,flexDirection:'column'}}>
+            <Image source={{uri:'https://is4-ssl.mzstatic.com/image/thumb/Purple112/v4/5a/14/06/5a1406df-6c94-ac63-3211-972890bee917/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png'}} style={{height:100,width:100,alignItems:'center',justifyContent:'center',alignSelf:'center',marginTop:20}}  ></Image>
+          
+                <View>
+            <FlatList
+            data={this.state.Deatlieslist}
+            renderItem={Deatlies_list_render_item_list}
+            />
+
+                </View>
+            </View>
+            
+                    </View>
+            
+            )
+  }
+}

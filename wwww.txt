@@ -1,0 +1,36 @@
+                                                            Vs-code plugin
+
+
+  1 :- Color Highlight :-  Show  the Highlight Color  in file
+  2:-  Color info :-  Show  the  Color  info 
+  3:-  Color picker:-  select the color  picker  	
+  4:-  vscode-icons:-   icons show  in  vscode-icons
+  5:-  Simple React Snippets :- generate the  class  in  functions  and  class component
+  6:-  React-Native/React/Redux snippets for es6/es7:-Code snippets for React-Native/React/Redux es6/es7 and flowtype/typescript, Storybook
+  7:-  Prettier - Code formatter :-Code formatter using prettier
+  8:-  Open Folder:-Open all files of folder in the same VSCode instance
+  9:-  Notepad++ keymap:-Popular Notepad++ keybindings for Visual Studio Code
+  10:- Nomo Dark Icon Theme:-Install this extension and select File Icon Theme to Nomo Dark.
+  11:- Material Icon Theme:-Material Design Icons for Visual Studio Code
+  12:- markdownlint:-Markdown linting and style checking for Visual Studio Code
+  13:- Live HTML Previewer:-Edit and preview HTML documents in VS Code
+  14:- Ionic Snippets:-Ionic snippets for VS Code
+  15:- ionic2-vscode:-Ionic2-vscode is a simple Visual Studio Code extension to help in the development of Ionic 2 apps! To use simply open the command pallete and use one of the 5 currently available commands while editing your Ionic app:
+  16:- Ionic Extension Pack:-This extension pack packages some of the most popular (and some I find very useful) VS Code Ionic (2.x and 3.x) extensions
+  17:- Ionic Documentation:-Quick access to Ionic 4 documentation loaded inside of Visual Studio Code
+  18:- Ionic 3 ionView Snippets:-VS code snippets for Ionic 3 ionView
+  19:- Ionic :-Official extension for Ionic and Capacitor development
+
+
+
+        android  studio  plugin
+
+  1:- React snippets
+  2:- React QuickSwitch:- show  the  extension
+
+
+                                        interview question  
+ 
+
+
+ 

@@ -1,0 +1,3 @@
+git config --global kishan.ethics "kishan.ethics"
+git config --global kishan.dudhatra@ethicsinfotech.in
+https://mega.nz/folder/rvwg2LKR#g3M_hUo_eyHFehtJ0sBbUg
